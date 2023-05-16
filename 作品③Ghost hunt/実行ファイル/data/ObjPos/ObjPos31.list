@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleList name="objPos11" version="1.0">
+  <ActNode name="BulletPos" objname="PlayerBullet" posX="500" posY="600" pos2X="900" pos2Y="700" pos3X="250" pos3Y="250"/>
+  
+  <ActNode name="PlayerPos" objname="Player" posX="32" posY="32"/>
+
+  <ActNode name="RedEnemy" objname="RedEnemy" posX="950.0" posY="200.0"/>
+    
+  <ActNode name="BlackEnemy" objname="BlackEnemy" posX="400.0" posY="500.0"/>
+  
+  <ActNode name="RedEnemy" objname="RedEnemy" posX="450.0" posY="150.0"/>
+
+  <ActNode name="BlackEnemy" objname="BlackEnemy" posX="900.0" posY="600.0"/>
+  
+  <ActNode name="BossEnemy" objname="BossEnemy" posX="400.0" posY="530.0"/>
+</moduleList>

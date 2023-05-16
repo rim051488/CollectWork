@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleList name="player" version="1.0">
+  <ActNode name="MoveLRTB">
+  <module name="NotCheckKey2" state="Cnt" key1="Left" key2="Right" key3="Top" key4="Bottom">
+    <module name="CheckKey" state="Cnt" key="Left">
+      <module name="CheckCol2" w="-16" speedX="-3">
+        <module name="CheckCol" w="-16" speedX="-3">
+          <module name="Move" x="-200"/>
+        </module>
+      </module>
+      <module name="SetAnime" state="Left"/>
+      </module>
+    </module>
+  </ActNode>
+  <ActNode name="MoveLRTB">
+    <module name="NotCheckKey2" state="Cnt" key1="Left" key2="Right" key3="Top" key4="Bottom">
+    <module name="CheckKey" state="Cnt" key="Right">
+      <module name="CheckCol2" w="16" speedX="3">
+        <module name="CheckCol" w="16" speedX="3">
+          <module name="Move" x="200"/>
+        </module>
+      </module>
+      <module name="SetAnime" state="Right"/>
+      </module>
+    </module>
+  </ActNode>
+  <ActNode name="MoveLRTB">
+    <module name="NotCheckKey2" state="Cnt" key1="Left" key2="Right" key3="Top" key4="Bottom">
+    <module name="CheckKey" state="Cnt"  key="Top">
+      <module name="CheckCol2" h="-16" speedY="-3">
+        <module name="CheckCol" h="-16" speedY="-3">
+          <module name="Move" y="-200"/>
+        </module>
+      </module>
+      <module name="SetAnime" state="Top"/>
+      </module>
+    </module>
+  </ActNode>
+  <ActNode name="MoveLRTB">
+    <module name="NotCheckKey2" state="Cnt" key1="Left" key2="Right" key3="Top" key4="Bottom">
+    <module name="CheckKey" state="Cnt"  key="Bottom">
+      <module name="CheckCol2" h="16" speedY="3">
+        <module name="CheckCol" h="16" speedY="3">
+          <module name="Move" y="200"/>
+        </module>
+      </module>
+      <module name="SetAnime" state="Bottom"/>
+      </module>     
+    </module>
+  </ActNode>
+  
+  <ActNode name="MoveLRTB2">
+    <module name="CheckKey2" state="Cnt" key1="Top" key2="Right">
+      <module name="CheckColKey2" w="16" speedX="3" h="-16" speedY="-3">
+        <module name="CheckColKey" w="16" speedX="3" h="-16" speedY="-3">
+          <module name="Move2" x="130" y="-130"/>
+        </module>
+      </module>
+      <module name="SetAnime" state="Top"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveLRTB2">
+    <module name="CheckKey2" state="Cnt" key1="Top" key2="Left">
+      <module name="CheckColKey2" w="-16" h="-16" speedX="-3" speedY="-3">
+        <module name="CheckColKey" w="-16" h="-16" speedX="-3" speedY="-3">
+          <module name="Move2" x="-130" y="-130"/>
+        </module>
+      </module>
+      <module name="SetAnime" state="Top"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveLRTB2">
+    <module name="CheckKey2" state="Cnt" key1="Bottom" key2="Right">
+      <module name="CheckColKey2" w="16" speedX="3" h="16" speedY="3">
+        <module name="CheckColKey" w="16" speedX="3" h="16" speedY="3">
+          <module name="Move2" x="130" y="130"/>
+        </module>
+      </module>
+      <module name="SetAnime" state="Bottom"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveLRTB2">
+    <module name="CheckKey2" state="Cnt" key1="Bottom" key2="Left">
+      <module name="CheckColKey2" w="-16" speedX="-3" h="16" speedY="3">
+        <module name="CheckColKey" w="-16" speedX="-3" h="16" speedY="3">
+          <module name="Move2" x="-130" y="130"/>
+        </module>
+      </module>
+      <module name="SetAnime" state="Bottom"/>
+    </module>
+  </ActNode>
+  
+</moduleList>

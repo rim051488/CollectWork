@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionList name="player" version="1.0">
+  <action name = "Bottom" source="image/PlayerList/Military.png" imageKey="Bottom" divSizeX="32" divSizeY="32" divCntX="3" divCntY="1">
+    <anime loop="-1" encoding="csv">
+      0,10,
+      1,10,
+      2,10
+    </anime>
+  </action>
+  <action name = "Left" source="image/PlayerList/Military.png" imageKey="Left" divSizeX="32" divSizeY="32" divCntX="3" divCntY="2">
+    <anime loop="-1" encoding="csv">
+      3,10,
+      4,10,
+      5,10
+    </anime>
+  </action>
+  <action name ="Right" source="image/PlayerList/Military.png" imageKey="Right" divSizeX="32" divSizeY="32" divCntX="3" divCntY="3">
+    <anime loop="-1" encoding="csv">
+      6,10,
+      7,10,
+      8,10
+    </anime>
+  </action>
+  <action name ="Top" source="image/PlayerList/Military.png" imageKey="Top" divSizeX="32" divSizeY="32" divCntX="3" divCntY="4">
+    <anime loop="-1" encoding="csv">
+      9,10,
+      10,10,
+      11,10
+    </anime>
+  </action>
+</actionList>

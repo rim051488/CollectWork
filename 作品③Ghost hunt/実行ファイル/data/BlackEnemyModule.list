@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moduleList name="enemy" version="1.0">
+  <ActNode name="MoveLRTB">
+    <module name="NonCheckPlayer" flag="false">
+      <module name="CheckRandom" state="Cnt" random="0" angle="180">
+        <module name="NotCheckCol">
+          <module name="RandomCheckCol" w="-16" speedX="-3">
+            <module name="EnemyMove" x="-80" DethFlag="0"/>
+          </module>
+        </module>
+        <module name="SetAnime" state="Left2"/>
+      </module>
+    </module>
+  </ActNode>
+  <ActNode name="MoveLRTB">
+    <module name="NonCheckPlayer" flag="false">
+      <module name="CheckRandom" state="Cnt" random="1" angle="0">
+        <module name="NotCheckCol">
+          <module name="RandomCheckCol" w="16" speedX="3">
+            <module name="EnemyMove" x="80" DethFlag="0"/>
+          </module>
+        </module>
+        <module name="SetAnime" state="Right2"/>
+        </module>
+      </module>
+  </ActNode>
+  <ActNode name="MoveLRTB">
+    <module name="NonCheckPlayer" flag="false">
+      <module name="CheckRandom" state="Cnt" random="2" angle="270">
+        <module name="NotCheckCol">
+          <module name="RandomCheckCol" h="-16" speedY="-3">
+            <module name="EnemyMove" y="-80" DethFlag="0"/>
+          </module>
+        </module>
+        <module name="SetAnime" state="Top2"/>
+      </module>
+    </module>
+  </ActNode>
+  <ActNode name="MoveLRTB">
+    <module name="NonCheckPlayer" flag="false">
+      <module name="CheckRandom" state="Cnt" random="3" angle="90">
+        <module name="NotCheckCol">
+          <module name="RandomCheckCol" h="16" speedY="3">
+            <module name="EnemyMove" y="80" DethFlag="0"/>
+          </module>
+        </module>
+        <module name="SetAnime" state="Bottom2"/>
+      </module>
+    </module>
+  </ActNode>
+  <ActNode name="MoveCheckPlayer">
+    <module name="CheckPlayer" angle1="136" angle2="225">
+      <module name="CheckCol" w="-16" speedX="-3">
+          <module name="EnemyMove" x="-200" DethFlag="1"/>
+      </module>
+      <module name="SetAnime" state="Left2"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveCheckPlayer">
+    <module name="CheckPlayer" angle1="316" angle2="45">
+      <module name="CheckCol" w="16" speedX="3">
+          <module name="EnemyMove" x="200" DethFlag="1"/>
+      </module>
+      <module name="SetAnime" state="Right2"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveCheckPlayer">
+    <module name="CheckPlayer" angle1="226" angle2="315">
+      <module name="CheckCol" h="-16" speedY="-3">
+          <module name="EnemyMove" y="-200" DethFlag="1"/>
+        </module>
+      <module name="SetAnime" state="Top2"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveCheckPlayer">
+    <module name="CheckPlayer"  angle1="46" angle2="135">
+      <module name="CheckCol" h="16" speedY="3">
+          <module name="EnemyMove" y="200" DethFlag="1"/>
+      </module>
+      <module name="SetAnime" state="Bottom2"/>
+    </module>
+  </ActNode>
+  <!--<ActNode name="MoveCheckBullet">
+    <module name="CheckBullet" flag="true">
+      <module name="CheckCol" w="-16" speedX="-3">
+        <module name="BulletCheckMove" y="-40"/>
+      </module>
+      <module name="SetAnime" state="Left2"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveCheckBullet">
+    <module name="CheckBullet" flag="true">
+      <module name="CheckCol" w="16" speedX="3">
+        <module name="BulletCheckMove" x="40"/>
+      </module>
+      <module name="SetAnime" state="Right2"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveCheckBullet">
+    <module name="CheckBullet" flag="true">
+      <module name="CheckCol" h="-16" speedY="-3">
+        <module name="BulletCheckMove" y="-40"/>
+      </module>
+      <module name="SetAnime" state="Top2"/>
+    </module>
+  </ActNode>
+  <ActNode name="MoveCheckBullet">
+    <module name="CheckBullet" flag="true">
+      <module name="CheckCol" h="16" speedY="3">
+        <module name="BulletCheckMove" y="40"/>
+      </module>
+      <module name="SetAnime" state="Bottom2"/>
+    </module>
+  </ActNode>-->
+  <ActNode name="LoseSight">
+    <module name="LoseTime" T="0" rad="270">
+      <module name="SetAnime" state="Top2"/>
+    </module>
+  </ActNode>
+  <ActNode name="LoseSight">
+    <module name="LoseTime" T="1" rad="0">
+      <module name="SetAnime" state="Right2"/>
+    </module>
+  </ActNode>
+  <ActNode name="LoseSight">
+    <module name="LoseTime" T="2" rad="90">
+      <module name="SetAnime" state="Bottom2"/>
+    </module>
+  </ActNode>
+  <ActNode name="LoseSight">
+    <module name="LoseTime" T="3" rad="180">
+      <module name="SetAnime" state="Left2"/>
+    </module>
+  </ActNode>
+</moduleList>
